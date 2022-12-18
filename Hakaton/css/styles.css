@@ -1,0 +1,212 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+input
+{
+	background-color: #99ccff1a;
+	font-size: 120%;
+	padding: 5px 10px;
+	outline: none;
+	border: none;
+	margin: 0 5px;
+	border-bottom: 2px solid rgb(110, 110, 110);
+}
+
+.contain
+{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.link 
+{
+	cursor: pointer;/* color: white; */
+	padding: 10px 15px;
+	border: 2px solid #2284e0;
+	text-shadow: rgb(69, 69, 69) 0px 1px 1px;
+	transition: .5s;
+}
+.link:hover
+{
+	border-radius: 5px;
+	box-shadow: inset 0px -5px 0 #2284e0;
+}
+
+/*HEADER*/
+
+header
+{
+	background-color: #99ccff1a;
+	height: 10%;
+}
+
+.block_head
+{
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: #d6d6d6 0px 5px 5px 0px;
+}
+
+.block_head .logo
+{
+	display: flex;
+}
+
+.block_head h1
+{
+	text-shadow: rgb(69, 69, 69) 0px 1px 2px;
+}
+
+.block_head h1 span
+{
+	color: orange;
+}
+
+.block_head img
+{
+	width: 15%;
+	border-radius: 5px;
+}
+
+header .block_head form
+{
+	display: flex;
+}
+
+/*HEADER*/
+
+
+/*CONTENT*/
+
+.content
+{
+	padding: 20px;
+}
+.content2
+{
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	height: 350px;
+}
+
+.content .block_content
+{
+	display: grid;
+	text-align: center;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.user-logo
+{
+	width: 20%;
+}
+
+.content .block_content .block_content_item div
+{
+	justify-content: center;
+	display: flex;
+}
+.content .block_content .block_content_item div form, a
+{
+	margin: 0 2px;
+}
+
+.content .block_content .block_content_item .img_mat
+{
+	width: 90%;
+}
+
+/*CONTENT*/
+
+/*OTHER*/
+
+.error_message{
+	text-align: center;
+	font-size: 0;
+	transition: 5s;
+}
+.error_message.active{
+	color: red;
+	text-align: center;
+	font-size: 100%;
+}
+
+/*OTHER*/
+
+/*FOOTER*/
+
+footer
+{
+	position: relative;
+	bottom: 0;
+	padding: 20px;
+	color: rgb(109, 109, 109);
+	border-top: 1px solid black;
+	background: black;
+	height: auto;
+	text-align: center;
+	opacity: 90%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+footer a
+{
+	color: rgb(109, 109, 109);
+	transition: .5s;
+}
+
+footer a:hover
+{
+	color: rgb(160, 160, 160);
+}
+
+/*FOOTER*/
+
+/*ADD KATALOG AND SOTRUDNIKS*/
+
+.block_add
+{
+	text-align: center;
+	padding: 20px;
+	width: 500px;
+	margin: 0 auto;
+	box-shadow: #d6d6d6 0px 5px 5px 0px;
+}
+
+.block_add h1 span
+{
+	color: orange;
+}
+
+.block_add img
+{
+	width: 30%;
+}
+
+.block_add input
+{
+	margin: 10px 0;
+}
+
+select
+{
+	padding: 5px 10px;
+	background-color: #99ccff1a;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid rgb(110, 110, 110);
+}
+
+/*ADD KATALOG AND SOTRUDNIKS*/

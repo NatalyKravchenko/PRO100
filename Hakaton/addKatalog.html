@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Добавление каталога</title>
+	<script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="icon" href="images/logo.png">
+</head>
+<body>
+
+	<form id="addKat" enctype="multipart/form-data" action="api/addKatalog.php" method="POST" class="block_add">
+		<a class="logo" href="admin.php">
+				<img src="images/logo.png">
+				<h1>Маркетинг<span>PRO</span></h1>
+			</a>
+		<h3>Название каталога</h3>
+		<input id="title_katalog" type="text" maxlength="20" name="title_katalog">
+		<h3>Изображение для каталога</h3>
+		<input type="file" name="img_katalog">
+		<h3>Содержимое каталога</h3>
+		<input type="file" name="file_katalog">
+		<button class="link">Добавить каталог</button>
+	</form>
+
+<script type="text/javascript">
+		$(document).ready(function(){
+			$('#addKat').submit(function(e){
+				var title_katalog = $('#title_katalog').val();
+
+				$('.error').remove();
+
+				if (title_katalog.length < 5) {
+					$('#title_katalog').after('<div class="error_message active"><span class="error">Минимальная длина названия 5 символов!</span></div>');
+					e.preventDefault();
+				}
+			});
+		});
+</script>
+</body>
+</html>
